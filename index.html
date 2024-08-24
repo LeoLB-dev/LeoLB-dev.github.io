@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Test - Ficha Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="date">Lundi 2 septembre</h1>
+        <h4>Voici le ficha du jour :</h4>
+        <div id=ficha class="centre">
+            <img src="" width="" height="">
+        </div>
+        <p id="pov" class="centre">Pov : </p>
+        <hr style="border : dashed">
+
+        <form method="post" action="" name="contact-form">
+
+
+
+            <label class="margin-top" style="margin-bottom: 5px;">1. Quelle note donneriez-vous ?</label><br>
+            <div class="rating-container">
+            <input name="note" value="1" id="1" type="radio" required><label for="1">1</label></input>
+            <input name="note" value="2" id="2" type="radio" required><label for="2">2</label></input>
+            <input name="note" value="3" id="3" type="radio" required><label for="3">3</label></input>
+            <input name="note" value="4" id="4" type="radio" required><label for="4">4</label></input>
+            <input name="note" value="5" id="5" type="radio" required><label for="5">5</label></input>
+            <input name="note" value="6" id="6" type="radio" required><label for="6">6</label></input>
+            <input name="note" value="7" id="7" type="radio" required><label for="7">7</label></input>
+            <input name="note" value="8" id="8" type="radio" required><label for="8">8</label></input>
+            <input name="note" value="9" id="9" type="radio" required><label for="9">9</label></input>
+            <input name="note" value="10" id="10" type="radio" required><label for="10">10</label>
+        </input>
+        </div>
+            <br><br>
+
+            <label for="devinette" class="padding-bottom">2. Qui aurait pu créer ça ? </label><br>
+            <input name="devinette" value="" id="devinette" type="text" required class="input-text devinette-label" style="margin-top:5px;">
+
+            <br><br>
+
+            <label for="nom" class="">3. Votre prénom </label>
+            <input name="nom" value="" id="nom" type="text" class="input-text" required>
+            
+            <br>
+
+            <div class="submit-button">
+                <button type="submit" id="submit" class="button-23">
+                    <span id="submit-text">Envoyer</span>
+                    <span id="loader" class="loader" style="display: none;"></span>
+                </button>
+            </div>
+            
+
+            <input type="text" name="ficha" value="Jour 1" style="visibility: hidden;">
+
+        </form>
+        <script src="Sheet.js"></script>
+
+
+
+        <br>
+        <div id="white-space" style="height:500px;"></div>
+        <!--End container-->
+    </div>
+    <!--INDICATIONS-->
+    <p id="comment to do later">TO DO LATER : automatiser le JS pour que le mardi à minuit (ou 7H), la src de l'img change et que la phrase aussi ; que le input de l'img invisble aussi change de nom. Ou au pire, ne pas changer le txt dans l'input et juste vérifier la date à laquelle le formulaire a été soumis. /!\ Dans ce cas là, mettre le changement de ficha à minuit. </p>
+</body>
+
+</html>
